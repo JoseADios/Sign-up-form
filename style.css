@@ -51,7 +51,7 @@ section {
     color: white;
     margin: 1.5rem 0;
     padding: 2rem 2rem;
-    width: 25%;
+    width: 400px;
     /* border: 0.5px solid white;    */
     border-radius: 1rem;
     backdrop-filter: blur(10px);
@@ -161,4 +161,75 @@ p {
     width: 30px;
     height: auto;
     
+}
+
+/* Responsive */
+
+@media screen and (max-width: 440px) {
+    .main {
+        height: 100vh;
+    }
+
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    .main h2 {
+        font-size: 1rem;
+    }
+
+    section {
+        width: 300px;
+    }
+
+    section>form>input {
+        height: 1.5rem;
+    }
+
+    #btn-send {
+        height: 2rem;
+    }
+
+    .accs {
+        align-items: center;
+    }
+
+    .accs>div {
+        margin-bottom: .5rem;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .main {
+        height: 100vh;
+    }
+
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    .main h2 {
+        font-size: 1rem;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    section>form>input {
+        height: 1.5rem;
+    }
+
+    #btn-send {
+        height: 2rem;
+    }
+
+    .accs {
+        align-items: center;
+    }
+
+    .accs>div {
+        margin-bottom: .5rem;
+    }
 }
