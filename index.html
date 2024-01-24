@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
-        <h1>Sign Up</h1>
+        <div class="logo">
+            <img src="img/libro.png" alt="logo">
+            <h1>EcoNotes</h1>
+        </div>
         <section>
-            <label for="name">Name</label>
-            <input type="text" id="name">
-
-            <label for="Email">Email</label>
-            <input type="email" id="Email">
-
-            <label for="phone">Phone number</label>
-            <input type="tel" id="phone">
-
-            <label for="password">Password</label> 
-            <input type="password" id="password">
-
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword">
-
-            <button type="submit">Sign Up</button>
-
-            <p>Already have an account? <a href="login.php">Login</a></p>
-
-            <h2>Or</h2>
-
-            <div class="accs">
-                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
-                <a href="https://www.google.com/"><img src="images/google.png" alt="google"></a>
-                <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedin"></a>
-            </div>
+            <h2>Sign Up</h2>
+            <form action="#"> 
+                <label for="name">Name</label>
+                <input maxlength="100" minlength="2" required type="text" id="name">
+    
+                <label for="Email">Email</label>
+                <input required type="email" id="Email">
+    
+                <label for="phone">Phone number</label>
+                <input required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Please enter a valid phone number, example: 809-632-8512" type="tel" id="phone">
+    
+                <label for="password">Password</label> 
+                <input required type="password" id="password">
+    
+                <label for="confirmPassword">Confirm Password</label>
+                <input required type="password" id="confirmPassword">
+    
+                <input required id="btn-send" type="submit" value="Sign Up">
+    
+                <!-- <button  type="submit">Sign Up</button> -->
+    
+                <p>Already have an account? <a href="#"> <b>Login</b></a></p>
+    
+                <h4 id="or">Or</h4>
+    
+                <div class="accs">
+                    <a class="icon" href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"></a>
+                    <a class="icon" href="https://www.google.com/"><img src="img/google.png" alt="google"></a>
+                    <a class="icon" href="https://www.linkedin.com/"><img src="img/linkedin.png" alt="linkedin"></a>
+                </div>
+            </form>
 
         </section>
     </div>

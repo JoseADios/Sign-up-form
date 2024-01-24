@@ -1,0 +1,164 @@
+/* eliminar estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo>img {
+    width: 55px;
+    height: auto;
+    margin-right: .5rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: .6rem;
+
+}
+
+.main h1 {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+}
+
+.main h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+section {
+    color: white;
+    margin: 1.5rem 0;
+    padding: 2rem 2rem;
+    width: 25%;
+    /* border: 0.5px solid white;    */
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(177, 177, 244, 0.233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    
+}
+
+section>form>label {
+    align-self: self-start;
+    margin-bottom: .5rem;
+    
+}
+
+section>form>input {
+    width: 100%;
+    border: none;
+    border-radius: .2rem;
+    margin-bottom: 1rem;
+    height: 1.8rem;
+    padding-left: 0.5rem;
+    background-color: #ffffff31;
+    color: white;
+}
+
+section>form>input:-internal-autofill-selected {
+    background-color: #ffffff31 !important;
+    color: white !important;
+}
+
+section>form>input:focus {
+    outline: none;
+    background-color: #ffffff41;
+}
+
+section>form>input:hover {
+    background-color: #ffffff41;
+    transition: .3s;
+}
+
+/* Send button */
+#btn-send {
+    /* font-size: 1rem; */
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+    width: 100%;
+    padding: .3rem;
+    border-radius: .4rem;
+    border: none;
+    background-color: #272589;
+    color: white;
+}
+
+#btn-send:hover {
+    background-color: #323089;
+    transition: .3s;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ddddfc;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+#or{
+    text-align: center;
+}
+
+.accs {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff57;
+    padding: .5rem;
+    border-radius: .4rem;
+    width: 50px;
+    height: auto;
+}
+
+.icon:hover {
+    background-color: #ffffff7e;
+}
+
+.icon>img {
+    width: 30px;
+    height: auto;
+    
+}
