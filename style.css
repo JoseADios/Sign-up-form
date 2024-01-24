@@ -16,7 +16,7 @@
     height: 100vh;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -62,14 +62,12 @@ section {
     align-items: center;
 }
 
-form {
-    
-}
+form {}
 
 section>form>label {
     align-self: self-start;
     margin-bottom: .5rem;
-    
+
 }
 
 section>form>input {
@@ -83,9 +81,9 @@ section>form>input {
     color: white;
 }
 
-section>form>input:-internal-autofill-selected {
-    background-color: #ffffff31 !important;
-    color: white !important;
+/* cambiar color del placeholder */
+section>form>input::placeholder {
+    color: rgb(207, 206, 206);
 }
 
 section>form>input:focus {
@@ -131,7 +129,7 @@ p {
     text-align: center;
 }
 
-#or{
+#or {
     text-align: center;
 }
 
@@ -160,7 +158,15 @@ p {
 .icon>img {
     width: 30px;
     height: auto;
-    
+
+}
+
+.credits {
+    font-size: small;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 1px;
 }
 
 /* Responsive */
