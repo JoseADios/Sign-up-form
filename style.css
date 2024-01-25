@@ -55,14 +55,14 @@ section {
     /* border: 0.5px solid white;    */
     border-radius: 1rem;
     backdrop-filter: blur(10px);
-    background-color: rgba(177, 177, 244, 0.233);
+    background-color: #b1b1f43b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 0 0 #43436f3b,
+        10px 10px 0 0 #9797c81f;
 }
-
-form {}
 
 section>form>label {
     align-self: self-start;
